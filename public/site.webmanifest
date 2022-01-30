@@ -1,0 +1,14 @@
+{
+  "name": "Wedding of Jessica and Riley",
+  "short_name": "Jessica and Riley",
+  "icons": [
+    {
+      "src": "/google-touch-icon.png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#e8ddd6",
+  "theme_color": "#fff",
+  "start_url": "/",
+  "display": "fullscreen"
+}

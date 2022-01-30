@@ -1,3 +1,29 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.container {
+  position: sticky;
+  top: 0;
+  @include mixins.container(3);
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  color: var(--rust);
+}
+
+.info {
+  text-align: center;
+  font-family: var(--font-names);
+  margin-bottom: 1rem;
+  .names {
+    font-size: 5rem;
+  }
+  .date {
+    font-size: 3rem;
+  }
+}
+
 .skipToContentLink {
   color: var(--black);
   background: var(--white);
@@ -14,6 +40,7 @@
   text-align: center;
   font-size: 1.2rem;
   line-height: 1;
+  font-family: var(--font-body);
   letter-spacing: normal;
   cursor: pointer;
   &:link,

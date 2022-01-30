@@ -13,6 +13,10 @@ export default function Header() {
           Skip to Content
         </a>
         <div className={styles.container}>
+          <div className={styles.info}>
+            <p className={styles.names}>Jessica + Riley</p>
+            <p className={styles.date}>August 28, 2022</p>
+          </div>
           <Nav navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />
           <Toggle navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />
         </div>

@@ -8,8 +8,24 @@ export default function Home() {
     <>
       <CustomHead />
       <div className={styles.container}>
-        <h1>Riley + Jessica</h1>
-        <p>August 28, 2022</p>
+        <h1 className={styles.names}>Jessica + Riley</h1>
+        <p className={styles.date}>August 28, 2022</p>
+      </div>
+      <div className={styles.container}>
+        <h1 className={styles.names}>Jessica + Riley</h1>
+        <p className={styles.date}>August 28, 2022</p>
+      </div>
+      <div className={styles.container}>
+        <h1 className={styles.names}>Jessica + Riley</h1>
+        <p className={styles.date}>August 28, 2022</p>
+      </div>
+      <div className={styles.container}>
+        <h1 className={styles.names}>Jessica + Riley</h1>
+        <p className={styles.date}>August 28, 2022</p>
+      </div>
+      <div className={styles.container}>
+        <h1 className={styles.names}>Jessica + Riley</h1>
+        <p className={styles.date}>August 28, 2022</p>
       </div>
     </>
   );

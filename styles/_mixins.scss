@@ -1,0 +1,19 @@
+@use "./breakpoint";
+
+@mixin container($padding: 1) {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--size-md);
+  padding-left: calc($padding * 1rem * 0.5);
+  padding-right: calc($padding * 1rem * 0.5);
+  @media only screen and (max-width: breakpoint.$md) and (orientation: landscape) {
+    --safe-area-inset-left: env(safe-area-inset-left);
+    padding-left: calc(calc($padding * 1rem * 0.5) + var(--safe-area-inset-left));
+    --safe-area-inset-right: env(safe-area-inset-right);
+    padding-right: calc(calc($padding * 1rem * 0.5) + var(--safe-area-inset-right));
+  }
+  @media (min-width: breakpoint.$md) {
+    padding-left: calc($padding * 1rem);
+    padding-right: calc($padding * 1rem);
+  }
+}

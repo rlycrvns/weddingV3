@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  text-align: center;
+  color: var(--rust);
 }
 
 .main {
@@ -10,4 +12,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.names {
+  font-family: var(--font-names);
+  font-weight: 400;
+  font-size: 10rem;
+}
+
+.date {
+  font-size: 6rem;
+  font-family: var(--font-names);
+  font-weight: 400;
 }
