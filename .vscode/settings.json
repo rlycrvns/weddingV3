@@ -1,4 +1,10 @@
 {
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#000",
+    "titleBar.inactiveForeground": "#000000CC",
+    "titleBar.activeBackground": "#08f5aa",
+    "titleBar.inactiveBackground": "#08f5aa"
+  },
   "editor.bracketPairColorization.enabled": true,
   "editor.rulers": [80],
   "eslint.alwaysShowStatus": true,
