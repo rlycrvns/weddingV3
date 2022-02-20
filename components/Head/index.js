@@ -12,7 +12,8 @@ const CustomHead = () => {
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, viewport-fit=cover"
       />
       <meta name="theme-color" content="#fff" />
-      <link rel="alternate icon" type="image/png" href="/favicon.png" />
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="mask-icon" href="/favicon.svg" color="#fff"></link>
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link rel="manifest" href="/site.webmanifest" />
