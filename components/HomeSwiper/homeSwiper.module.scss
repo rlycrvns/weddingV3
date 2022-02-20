@@ -1,0 +1,10 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.homeSwiper {
+  margin: var(--spacing-section) 0;
+  img {
+    user-drag: none;
+    user-select: none;
+  }
+}

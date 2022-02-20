@@ -2,25 +2,9 @@
 @use "@styles/mixins";
 
 .nav {
-  display: block;
-  @media (max-width: breakpoint.$sm) {
-    display: none;
-    visibility: hidden;
-    width: 100%;
-    max-width: 100vw;
-    background: var(--bg-light-three);
-    z-index: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 139px;
-    bottom: 0;
-    padding-top: 1.5rem;
-    overflow-y: scroll;
-    &.isOpen {
-      visibility: visible;
-      display: flex;
-    }
+  display: none;
+  @media (min-width: breakpoint.$sm) {
+    display: block;
   }
 }
 
@@ -30,24 +14,30 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   @media (min-width: breakpoint.$sm) {
     flex-direction: row;
+    padding: 0 2rem;
   }
 }
 
 .navLink {
-  font-size: 2rem;
-  font-style: italic;
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 .toggle {
+  background-color: var(--white);
   display: block;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  bottom: 3rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 5000;
   @media (min-width: breakpoint.$sm) {
     display: none;
   }

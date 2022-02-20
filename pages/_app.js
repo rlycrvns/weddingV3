@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "focus-visible";
 import Layout from "@components/Layout";
-// import TagManager from "react-gtm-module";
 import "normalize.css";
 import "@styles/globals.scss";
 

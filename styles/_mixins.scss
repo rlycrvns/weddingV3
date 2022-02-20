@@ -1,9 +1,9 @@
 @use "./breakpoint";
 
-@mixin container($padding: 1) {
+@mixin container($padding: 1, $maxWidth: --size-xl) {
   margin: 0 auto;
   width: 100%;
-  max-width: var(--size-md);
+  max-width: var($maxWidth);
   padding-left: calc($padding * 1rem * 0.5);
   padding-right: calc($padding * 1rem * 0.5);
   @media only screen and (max-width: breakpoint.$md) and (orientation: landscape) {
