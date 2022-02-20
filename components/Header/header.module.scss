@@ -45,7 +45,9 @@
   }
   .names {
     font-size: 4rem;
+    margin-bottom: 0;
     @media (min-width: breakpoint.$md) {
+      margin-bottom: 1.5rem;
       font-size: 6rem;
     }
   }

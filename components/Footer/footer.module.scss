@@ -1,0 +1,30 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.footer {
+  margin-top: var(--spacing-section);
+  padding-bottom: calc(var(--spacing-section) / 2);
+}
+
+.container {
+  @include mixins.container(1.5);
+  @media (min-width: breakpoint.$md) {
+    @include mixins.container(3);
+  }
+  @media (min-width: breakpoint.$xl) {
+    @include mixins.container(1.5, --size-xl);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
