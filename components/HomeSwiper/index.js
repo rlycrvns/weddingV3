@@ -1,4 +1,6 @@
-import Image from "next/image";
+import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
+import { fill } from "@cloudinary/url-gen/actions/resize";
+import { Cloudinary } from "@cloudinary/url-gen";
 import SwiperCore, { FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { v4 as uuidv4 } from "uuid";
@@ -8,20 +10,24 @@ import "swiper/css/free-mode";
 SwiperCore.use([FreeMode]);
 
 const images = [
-  { src: "/images/Jessica+Riley-52.webp", width: 1380, height: 1104 },
-  { src: "/images/Jessica+Riley-20.webp", width: 1600, height: 1152 },
-  { src: "/images/Jessica+Riley-70.webp", width: 1600, height: 1067 },
-  { src: "/images/Jessica+Riley-55.webp", width: 1280, height: 900 },
-  { src: "/images/Jessica+Riley-56.webp", width: 1600, height: 1192 },
-  { src: "/images/Jessica+Riley-19.webp", width: 1489, height: 1191 },
-  { src: "/images/Jessica+Riley-80.webp", width: 1044, height: 905 },
-  { src: "/images/Jessica+Riley-27.webp", width: 1600, height: 1208 },
-  { src: "/images/Jessica+Riley-2.webp", width: 1600, height: 1249 },
-  { src: "/images/Jessica+Riley-39.webp", width: 1600, height: 1067 },
-  { src: "/images/Jessica+Riley-3.webp", width: 1600, height: 1067 }
+  { src: "Jessica_Riley-52_xe4s3v.jpg" },
+  { src: "Jessica_Riley-20_abrjwd.jpg" },
+  { src: "Jessica_Riley-70_imuvsb.jpg" },
+  { src: "Jessica_Riley-55_japhwj.jpg" },
+  { src: "Jessica_Riley-56_tamb0t.jpg" },
+  { src: "Jessica_Riley-39_muudxg.jpg" },
+  { src: "Jessica_Riley-80_mmjryf.jpg" },
+  { src: "Jessica_Riley-27_c6sljr.jpg" },
+  { src: "Jessica_Riley-2_h8nci5.jpg" },
+  { src: "Jessica_Riley-39_muudxg.jpg" },
+  { src: "Jessica_Riley-3_lf656s.jpg" }
 ];
-
 export default function HomeSwiper() {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "dm75wbbnz"
+    }
+  });
   return (
     <section className={styles.homeSwiper}>
       <div className={styles.container}>
@@ -35,14 +41,13 @@ export default function HomeSwiper() {
           }}
         >
           {images.map((image) => {
+            const src = cld.image(`wedding/${image.src}`);
+            src.format("webp").quality("auto");
             return (
               <SwiperSlide key={uuidv4()}>
-                <Image
-                  src={image.src}
-                  alt=""
-                  width={image.width}
-                  layout="responsive"
-                  height={image.height}
+                <AdvancedImage
+                  cldImg={src}
+                  plugins={[responsive({ steps: 200 }), placeholder({ mode: "blur" })]}
                 />
               </SwiperSlide>
             );
