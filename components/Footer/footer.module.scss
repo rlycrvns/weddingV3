@@ -3,7 +3,7 @@
 
 .footer {
   margin-top: var(--spacing-section);
-  padding-bottom: calc(var(--spacing-section) / 2);
+  padding-bottom: calc(var(--spacing-section) + 2rem);
 }
 
 .container {
@@ -12,7 +12,7 @@
     @include mixins.container(3);
   }
   @media (min-width: breakpoint.$xl) {
-    @include mixins.container(1.5, --size-xl);
+    @include mixins.container(3, --size-xl);
   }
 }
 

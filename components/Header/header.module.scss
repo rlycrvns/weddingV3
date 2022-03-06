@@ -18,7 +18,7 @@
     @include mixins.container(3);
   }
   @media (min-width: breakpoint.$xl) {
-    @include mixins.container(1.5, --size-xxl);
+    @include mixins.container(3, --size-xxl);
   }
 }
 
