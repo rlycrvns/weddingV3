@@ -4,7 +4,7 @@ const CustomHead = () => {
   return (
     <Head>
       {/* General Meta Tags */}
-      <title>Riley and Jessica 2022</title>
+      <title>Riley and Jessica 8/28/2022 - Portland, OR</title>
       <meta
         name="description"
         content="Riley and Jessica are to be wed on August 28, 2022 in Portland, Oregon"
