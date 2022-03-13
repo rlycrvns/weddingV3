@@ -1,4 +1,5 @@
 import { getLayout } from "@components/Layout/PageLayout";
+import Triangle from "@components/Triangle";
 import styles from "../../styles/Info.module.scss";
 export default function Info() {
   return (
@@ -9,15 +10,8 @@ export default function Info() {
         </div>
         <div className={styles.content}>
           <div className={styles.group}>
-            <h2>Where</h2>
-            <ul>
-              <li>Scholl's Valley Lodge 2840 SW River Road Hillsboro, OR 97123</li>
-              <li>About 45 minute drive from Portland</li>
-              <li>Parking is limited, please carpool if possible</li>
-            </ul>
-          </div>
-          <div className={styles.group}>
             <h2>When</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>August 28, 2022</li> <li>Arrival at 5:00pm</li>
               <li>Outdoor Ceremony at 5:30pm</li>
@@ -25,7 +19,17 @@ export default function Info() {
             </ul>
           </div>
           <div className={styles.group}>
+            <h2>Where</h2>
+            <div className={styles.divider}></div>
+            <ul>
+              <li>Scholl's Valley Lodge 2840 SW River Road Hillsboro, OR 97123</li>
+              <li>About 45 minute drive from Portland</li>
+              <li>Parking is limited, please carpool if possible</li>
+            </ul>
+          </div>
+          <div className={styles.group}>
             <h2>Vaccination Policy</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>
                 To protect the safety of all guests and vendors, proof of full (booster if eligible)
@@ -35,6 +39,7 @@ export default function Info() {
           </div>
           <div className={styles.group}>
             <h2>Accessibility</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>Gravel Parking Lot</li>
               <li>Ceremony and Reception Site are accessible without stairs</li>
@@ -42,6 +47,7 @@ export default function Info() {
           </div>
           <div className={styles.group}>
             <h2>Attire</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>Semi-Formal</li>
               <li>Light Coat Recommended due to the possibility of wind</li>
@@ -50,6 +56,7 @@ export default function Info() {
           </div>
           <div className={styles.group}>
             <h2>Food & Drink</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>Appetizers followed by Light Meal</li>
               <li>Beer and wine bar along with NA beverages</li>
@@ -57,6 +64,7 @@ export default function Info() {
           </div>
           <div className={styles.group}>
             <h2>Unplugged Ceremony</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>
                 We invite you to be fully present. Kindly turn off all devices and enjoy this
@@ -66,6 +74,7 @@ export default function Info() {
           </div>
           <div className={styles.group}>
             <h2>Children</h2>
+            <div className={styles.divider}></div>
             <ul>
               <li>
                 To allow all wedding guests, including parents, a night of relaxation and partying,

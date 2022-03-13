@@ -11,7 +11,7 @@ export default function PageLayout({ children }) {
   const pageName = slugify(route, { lower: true });
 
   const { scrollY } = useViewportScroll();
-  const marginTop = useTransform(scrollY, [0, 204, 205], [0, 0, 68]);
+  const marginTop = useTransform(scrollY, [0, 190, 190], [0, 0, 68]);
 
   return (
     <>

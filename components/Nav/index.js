@@ -1,7 +1,7 @@
 import { classNames } from "@lib/utilities";
 import Link from "next/link";
 import styles from "./nav.module.scss";
-import Triangle from "./Triangle";
+import Triangle from "@components/Triangle";
 
 const navItems = [
   { link: "", name: "Home" },

@@ -10,10 +10,10 @@ import { useWindowDimensions } from "@hooks/useWindowDimensions";
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const { scrollY } = useViewportScroll();
-  const position = useTransform(scrollY, [0, 205, 210], ["", "", "fixed"]);
+  const position = useTransform(scrollY, [0, 190, 190], ["", "", "fixed"]);
   const borderColor = useTransform(
     scrollY,
-    [0, 205, 210],
+    [0, 190, 190],
     ["rgba(205, 102, 71, 0)", "rgba(205, 102, 71, 0)", "rgba(205, 102, 71, 1)"]
   );
   const screenSize = useWindowDimensions();
