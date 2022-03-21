@@ -2,14 +2,14 @@ import CustomHead from "@components/Head";
 import Image from "next/image";
 import { getLayout } from "@components/Layout/PageLayout";
 import styles from "../styles/Home.module.scss";
-import HomeSwiper from "@components/HomeSwiper";
+import HomePhotos from "@components/HomePhotos";
 
 export default function Home() {
   return (
     <>
       <CustomHead />
       <div className={styles.container}>
-        <HomeSwiper />
+        <HomePhotos />
       </div>
     </>
   );

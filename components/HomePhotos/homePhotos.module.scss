@@ -1,0 +1,9 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.homePhotos {
+  margin-top: 10rem;
+  img {
+    width: 100%;
+  }
+}
