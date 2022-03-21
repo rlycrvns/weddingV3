@@ -86,14 +86,14 @@ export default function Info() {
               </li>
             </ul>
           </div>
-          <div className={styles.group}>
+          {/* <div className={styles.group}>
             <h2>Recommended Lodging</h2>
             <div className={styles.divider}></div>
             <ul>
               <li>Hotel 1</li>
               <li>Hotel 2</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
