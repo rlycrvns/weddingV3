@@ -6,7 +6,6 @@ import styles from "./navMobile.module.scss";
 const navItems = [
   { link: "", name: "Home" },
   { link: "info", name: "Info" },
-  { link: "our-story", name: "Our Story" },
   { link: "registry", name: "Registry" },
   { link: "rsvp", name: "RSVP" }
 ];
