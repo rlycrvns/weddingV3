@@ -14,8 +14,8 @@ export default function Info() {
             <div className={styles.divider}></div>
             <ul>
               <li>August 28, 2022</li> <li>Arrival at 5:00pm</li>
-              <li>Outdoor Ceremony at 5:30pm</li>
-              <li>Outdoor Reception to Follow On-site</li>
+              <li>Outdoor ceremony at 5:30pm</li>
+              <li>Outdoor reception to follow on-site</li>
             </ul>
           </div>
           <div className={styles.group}>
@@ -42,19 +42,21 @@ export default function Info() {
             </ul>
           </div>
           <div className={styles.group}>
-            <h2>Recommended Lodging</h2>
+            <h2>Children</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>Hotel 1</li>
-              <li>Hotel 2</li>
+              <li>
+                To allow all wedding guests, including parents, a night of relaxation and partying,
+                we have chosen to make our special day 21+ only
+              </li>
             </ul>
           </div>
           <div className={styles.group}>
             <h2>Accessibility</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>Gravel Parking Lot</li>
-              <li>Ceremony and Reception Site are accessible without stairs</li>
+              <li>Gravel parking Lot</li>
+              <li>Ceremony and reception site are accessible without stairs</li>
             </ul>
           </div>
           <div className={styles.group}>
@@ -62,7 +64,7 @@ export default function Info() {
             <div className={styles.divider}></div>
             <ul>
               <li>Semi-Formal</li>
-              <li>Light Coat Recommended due to the possibility of wind</li>
+              <li>Light coat recommended due to the possibility of wind</li>
               <li>Ceremony will be held on a lawn, beware of heels</li>
             </ul>
           </div>
@@ -70,7 +72,7 @@ export default function Info() {
             <h2>Food & Drink</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>Appetizers followed by Light Meal</li>
+              <li>Appetizers followed by light meal</li>
               <li>Beer and wine bar along with NA beverages</li>
             </ul>
           </div>
@@ -85,13 +87,11 @@ export default function Info() {
             </ul>
           </div>
           <div className={styles.group}>
-            <h2>Children</h2>
+            <h2>Recommended Lodging</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>
-                To allow all wedding guests, including parents, a night of relaxation and partying,
-                we have chosen to make our special day 21+ only
-              </li>
+              <li>Hotel 1</li>
+              <li>Hotel 2</li>
             </ul>
           </div>
         </div>

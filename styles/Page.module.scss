@@ -17,6 +17,7 @@
   h1 {
     font-family: var(--font-names);
     color: var(--green);
+    font-weight: 400;
   }
 }
 
@@ -50,7 +51,7 @@
       font-family: var(--font-names);
       font-size: calc(var(--font-size-h2) * 1.5);
       text-align: center;
-      font-weight: 600;
+      font-weight: 400;
       margin-top: 0;
       @media (min-width: breakpoint.$md) {
         text-align: right;

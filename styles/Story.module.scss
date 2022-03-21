@@ -13,8 +13,25 @@
 
 .header {
   text-align: center;
+  margin: var(--spacing-section) 0;
   h1 {
     color: var(--mauve);
     font-family: var(--font-names);
   }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img {
+  max-width: 20rem;
 }

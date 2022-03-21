@@ -1,5 +1,4 @@
 import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
-import { fill } from "@cloudinary/url-gen/actions/resize";
 import { Cloudinary } from "@cloudinary/url-gen";
 import SwiperCore, { FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,7 +36,7 @@ export default function HomeSwiper() {
           grabCursor={true}
           breakpoints={{
             320: { slidesPerView: 1 },
-            1024: { slidesPerView: 2 }
+            1024: { slidesPerView: 2.2 }
           }}
         >
           {images.map((image) => {
