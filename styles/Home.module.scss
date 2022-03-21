@@ -1,7 +1,14 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
 .container {
-  padding: 0 2rem;
-  text-align: center;
-  color: var(--rust);
+  @include mixins.container(1.5);
+  @media (min-width: breakpoint.$md) {
+    @include mixins.container(3);
+  }
+  @media (min-width: breakpoint.$xl) {
+    @include mixins.container(3, --size-xl);
+  }
 }
 
 .main {

@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <>
       <CustomHead />
-      <HomeSwiper />
+      <div className={styles.container}>
+        <HomeSwiper />
+      </div>
     </>
   );
 }

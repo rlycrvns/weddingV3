@@ -1,13 +1,9 @@
-import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
+import { AdvancedImage, responsive, placeholder, lazyload } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
-import SwiperCore, { FreeMode } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./homeSwiper.module.scss";
-import "swiper/css";
-import "swiper/css/free-mode";
-import Arrow from "./Arrow";
-SwiperCore.use([FreeMode]);
 
 const images = [
   { src: "Jessica_Riley-52_xe4s3v.jpg" },
@@ -31,34 +27,22 @@ export default function HomeSwiper() {
   return (
     <section className={styles.homeSwiper}>
       <div className={styles.container}>
-        <Swiper
-          spaceBetween={10}
-          freeMode={true}
-          grabCursor={true}
-          breakpoints={{
-            320: { slidesPerView: 1 },
-            1024: { slidesPerView: 2.2 }
-          }}
-        >
-          {images.map((image) => {
-            const src = cld.image(`wedding/${image.src}`);
-            src.format("webp").quality("auto");
-            return (
-              <SwiperSlide key={uuidv4()}>
-                <AdvancedImage
-                  cldImg={src}
-                  plugins={[
-                    responsive({ steps: [800, 1000, 1200] }),
-                    placeholder({ mode: "pixelate" })
-                  ]}
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        <div className={styles.arrow}>
-          <Arrow />
-        </div>
+        {images.map((image) => {
+          const src = cld.image(`wedding/${image.src}`);
+          src.format("webp").quality("auto");
+          return (
+            <div className={styles.image} key={uuidv4()}>
+              <AdvancedImage
+                cldImg={src}
+                plugins={[
+                  responsive({ steps: [800, 1000, 1600, 2000] }),
+                  placeholder({ mode: "blur" }),
+                  lazyload({ rootMargin: "10px 20px 10px 30px", threshold: 0.25 })
+                ]}
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
