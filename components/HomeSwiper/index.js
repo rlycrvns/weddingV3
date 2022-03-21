@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import styles from "./homeSwiper.module.scss";
 import "swiper/css";
 import "swiper/css/free-mode";
+import Arrow from "./Arrow";
 SwiperCore.use([FreeMode]);
 
 const images = [
@@ -52,6 +53,9 @@ export default function HomeSwiper() {
             );
           })}
         </Swiper>
+        <div className={styles.arrow}>
+          <Arrow />
+        </div>
       </div>
     </section>
   );
