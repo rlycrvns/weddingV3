@@ -48,8 +48,8 @@ export default function HomeSwiper() {
                 <AdvancedImage
                   cldImg={src}
                   plugins={[
-                    responsive({ steps: [320, 800, 1000, 1200, 1600] }),
-                    placeholder({ mode: "blur" })
+                    responsive({ steps: [800, 1000, 1200] }),
+                    placeholder({ mode: "pixelate" })
                   ]}
                 />
               </SwiperSlide>
