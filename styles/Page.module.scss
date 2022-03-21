@@ -13,25 +13,37 @@
 
 .header {
   text-align: center;
+  margin: var(--spacing-section) 0;
   h1 {
-    color: var(--green);
     font-family: var(--font-names);
+    color: var(--green);
   }
 }
 
+.wip {
+  font-size: var(--font-size-h4);
+  text-align: center;
+  margin-top: 6rem;
+}
+
 .content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
   margin-top: var(--spacing-section);
+  @media (min-width: breakpoint.$md) {
+    gap: 10rem;
+  }
   .group {
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin-inline: auto;
     @media (min-width: breakpoint.$md) {
-      grid-template-columns: repeat(3, 300px);
+      grid-template-columns: 325px 5rem 325px;
     }
     h2 {
       color: var(--green);
@@ -47,12 +59,8 @@
     li {
       color: var(--black);
       margin-bottom: 2rem;
-      text-transform: uppercase;
-      text-align: center;
+      text-align: left;
       padding: 0 2rem;
-      @media (min-width: breakpoint.$md) {
-        text-align: left;
-      }
     }
   }
 }

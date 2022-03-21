@@ -1,9 +1,9 @@
 import { getLayout } from "@components/Layout/PageLayout";
 import Triangle from "@components/Triangle";
-import styles from "../../styles/Info.module.scss";
+import styles from "../../styles/Page.module.scss";
 export default function Info() {
   return (
-    <section>
+    <section className={styles.info}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h1>Info</h1>
@@ -22,8 +22,12 @@ export default function Info() {
             <h2>Where</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>Scholl's Valley Lodge 2840 SW River Road Hillsboro, OR 97123</li>
-              <li>About 45 minute drive from Portland</li>
+              <li>
+                Scholl's Valley Lodge
+                <br /> 2840 SW River Road
+                <br /> Hillsboro, OR 97123
+              </li>
+              <li>45 minute drive from most parts of Portland</li>
               <li>Parking is limited, please carpool if possible</li>
             </ul>
           </div>
@@ -35,6 +39,14 @@ export default function Info() {
                 To protect the safety of all guests and vendors, proof of full (booster if eligible)
                 Covid-19 vaccination must be provided with formal RSVP
               </li>
+            </ul>
+          </div>
+          <div className={styles.group}>
+            <h2>Recommended Lodging</h2>
+            <div className={styles.divider}></div>
+            <ul>
+              <li>Hotel 1</li>
+              <li>Hotel 2</li>
             </ul>
           </div>
           <div className={styles.group}>

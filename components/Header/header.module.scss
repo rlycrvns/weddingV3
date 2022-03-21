@@ -37,7 +37,6 @@
     height: 100px;
     width: 1px;
     border-left: 1px solid var(--rust);
-    margin: 0 4rem;
     display: none;
     @media (min-width: breakpoint.$sm) {
       display: block;
@@ -46,6 +45,9 @@
   .names {
     font-size: 4rem;
     margin-bottom: 0;
+    @media (min-width: breakpoint.$sm) {
+      flex: 1;
+    }
     @media (min-width: breakpoint.$md) {
       margin-bottom: 1.5rem;
       font-size: 6rem;
@@ -55,6 +57,7 @@
     font-size: 3rem;
     @media (min-width: breakpoint.$sm) {
       font-size: 4rem;
+      flex: 1;
     }
     @media (min-width: breakpoint.$md) {
       font-size: 6rem;

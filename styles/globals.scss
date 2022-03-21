@@ -39,9 +39,12 @@
   --black: #3f321b;
   --white: #fff;
 
-  --bg-pink: #e8ddd6;
+  --bg-pink: #f7caca;
   --rust: #cd6647;
   --green: #485c41;
+  --mustard: #f8c060;
+  --blush: #f7caca;
+  --mauve: #c58993;
 
   --size-xs: 32rem;
   --size-sm: 48rem;
@@ -58,17 +61,14 @@
   --image-aspect-ratio-xl: 56.25%;
   --image-aspect-ratio-xxl: 56.25%;
 
-  --spacing-section: 4rem;
-  @media (min-width: breakpoint.$md) {
-    --spacing-section: 6rem;
-  }
+  --spacing-section: 6rem;
   @media (min-width: breakpoint.$lg) {
     --spacing-section: 8rem;
   }
 
   --font-body: "roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --font-names: "serenity", cursive;
+  --font-names: "serenity";
   --font-regular: 400;
   --font-bold: 700;
   --font-extrabold: 800;
@@ -78,9 +78,9 @@
   --font-size-normal: 1rem;
   --font-size-larger: 1.375rem;
   --font-size-largest: 1.5rem;
-  --font-size-h1: clamp(3rem, 7.8vw - 1.2rem, 5.75rem);
-  --font-size-h2: clamp(3rem, 7.8vw - 1.2rem, 3rem);
-  --font-size-h3: clamp(2rem, 6.3vw - 1.5rem, 2rem);
+  --font-size-h1: clamp(4rem, 7.8vw - 1.2rem, 5.75rem);
+  --font-size-h2: clamp(2rem, 7.8vw - 1.2rem, 3rem);
+  --font-size-h3: clamp(1.6rem, 6.3vw - 1.5rem, 2rem);
   --font-size-h4: 2rem;
 }
 
@@ -138,4 +138,8 @@ input[type="submit"] {
 
 .swiper-wrapper {
   align-items: flex-start;
+}
+
+.headroom--pinned {
+  border-bottom: 1px solid var(--rust);
 }

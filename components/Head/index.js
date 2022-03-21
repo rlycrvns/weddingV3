@@ -36,6 +36,9 @@ const CustomHead = () => {
       {<meta name="twitter:title" content="Riley and Jessica 2022" />}
       {<meta name="twitter:description" content="Riley and Jessica | August 28, 2022" />}
       {<meta name="twitter:image" content="" />}
+
+      {/*PreLoad Fonts*/}
+      <link rel="preload" href="/fonts/Serenity.ttf" as="font" crossOrigin="" />
     </Head>
   );
 };

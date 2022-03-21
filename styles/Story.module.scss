@@ -1,0 +1,20 @@
+@use "@styles/breakpoint";
+@use "@styles/mixins";
+
+.container {
+  @include mixins.container(1.5);
+  @media (min-width: breakpoint.$md) {
+    @include mixins.container(3);
+  }
+  @media (min-width: breakpoint.$xl) {
+    @include mixins.container(3, --size-xl);
+  }
+}
+
+.header {
+  text-align: center;
+  h1 {
+    color: var(--mauve);
+    font-family: var(--font-names);
+  }
+}
