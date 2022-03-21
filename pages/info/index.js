@@ -94,6 +94,13 @@ export default function Info() {
               <li>Hotel 2</li>
             </ul>
           </div> */}
+          <div className={styles.group}>
+            <h2>Questions?</h2>
+            <div className={styles.divider}></div>
+            <ul>
+              <li>Feel free to email us at rileyjesswed@gmail.com</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
