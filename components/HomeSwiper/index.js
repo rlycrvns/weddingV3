@@ -47,7 +47,10 @@ export default function HomeSwiper() {
               <SwiperSlide key={uuidv4()}>
                 <AdvancedImage
                   cldImg={src}
-                  plugins={[responsive({ steps: 200 }), placeholder({ mode: "blur" })]}
+                  plugins={[
+                    responsive({ steps: [320, 800, 1000, 1200, 1600] }),
+                    placeholder({ mode: "blur" })
+                  ]}
                 />
               </SwiperSlide>
             );
