@@ -81,7 +81,7 @@ export default function Info() {
                 Basically no jeans, t-shirts or shorts
               </li>
               <li>Light coat recommended due to the possibility of wind</li>
-              <li>Ceremony will be held on a lawn, we suggest avoided pointed heels</li>
+              <li>Ceremony will be held on a lawn, we suggest avoiding pointed heels</li>
             </ul>
           </div>
           <div className={styles.group}>
