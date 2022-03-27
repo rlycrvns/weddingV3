@@ -1,5 +1,6 @@
 import { getLayout } from "@components/Layout/PageLayout";
 import Triangle from "@components/Triangle";
+import Link from "next/link";
 import styles from "../../styles/Page.module.scss";
 export default function Info() {
   return (
@@ -23,9 +24,16 @@ export default function Info() {
             <div className={styles.divider}></div>
             <ul>
               <li>
-                Scholl's Valley Lodge
-                <br /> 2840 SW River Road
-                <br /> Hillsboro, OR 97123
+                <Link href="http://www.schollsvalleylodge.com/">
+                  <a target="_blank">Scholl's Valley Lodge</a>
+                </Link>
+                <br />
+                <Link href="https://www.google.com/maps/place/Scholls+Valley+Lodge/@45.4303321,-122.9313421,17z/data=!3m1!4b1!4m5!3m4!1s0x549513cf2aa8ab5b:0x457d5fd397d27ca3!8m2!3d45.4303321!4d-122.9291534">
+                  <a target="_blank">
+                    <br /> 2840 SW River Road
+                    <br /> Hillsboro, OR 97123
+                  </a>
+                </Link>
               </li>
               <li>45 minute drive from most parts of Portland</li>
               <li>Parking is limited, please carpool if possible</li>
@@ -64,8 +72,16 @@ export default function Info() {
             <div className={styles.divider}></div>
             <ul>
               <li>Semi-Formal</li>
+              <li>
+                Questions on what Semi-Formal means? Please reference{" "}
+                <Link href="https://www.theknot.com/content/what-to-wear-semi-formal">
+                  <a target="_blank">this article</a>
+                </Link>
+                <br />
+                Basically no jeans, t-shirts or shorts
+              </li>
               <li>Light coat recommended due to the possibility of wind</li>
-              <li>Ceremony will be held on a lawn, beware of heels</li>
+              <li>Ceremony will be held on a lawn, we suggest avoided pointed heels</li>
             </ul>
           </div>
           <div className={styles.group}>
@@ -90,7 +106,20 @@ export default function Info() {
             <h2>Recommended Lodging</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>Check back in a few days</li>
+              <li>
+                <Link href="https://www.hilton.com/en/hotels/rllc-dt-doubletree-portland/">
+                  <a>Double Tree at the Convention Center</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Hotel+Portland/@45.5307599,-122.657775,17z/data=!3m1!4b1!4m8!3m7!1s0x5495a0b3b9a22425:0xe44c336d8ce0b5c4!5m2!4m1!1i2!8m2!3d45.5307599!4d-122.6555863">
+                  <a>
+                    1000 NE Multnomah St <br />
+                    Portland, OR 97232
+                  </a>
+                </Link>
+              </li>
+              <li>Check back soon for a booking discount code</li>
             </ul>
           </div>
           <div className={styles.group}>
