@@ -119,7 +119,13 @@ export default function Info() {
                   </a>
                 </Link>
               </li>
-              <li>Check back soon for a booking discount code</li>
+              <li>
+                To book using our Fixed Rate please visit{" "}
+                <a href="https://www.hilton.com/en/hotels/rllc-dt-doubletree-portland/?SEO_id=BING-AMER-DT-RLLCDT&y_source=1_MTM3MjY5Mi00ODMtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D">
+                  this link
+                </a>{" "}
+                and enter 0560018601 into the Corporate Account field
+              </li>
             </ul>
           </div>
           <div className={styles.group}>
