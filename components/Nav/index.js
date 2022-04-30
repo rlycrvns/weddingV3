@@ -4,10 +4,10 @@ import styles from "./nav.module.scss";
 import Triangle from "@components/Triangle";
 
 const navItems = [
-  { link: "/", name: "Home", target: "self" },
-  { link: "/info", name: "Info", target: "self" },
+  { link: "/", name: "Home", target: "_self" },
+  { link: "/info", name: "Info", target: "_self" },
   { link: "https://www.travelersjoy.com/jessicaandriley", name: "Registry", target: "_blank" },
-  { link: "/rsvp", name: "RSVP", target: "self" }
+  { link: "/rsvp", name: "RSVP", target: "_self" }
 ];
 
 export default function Nav() {
