@@ -7,7 +7,6 @@ import { AnimatePresence } from "framer-motion";
 import NavMobile from "@components/NavMobile";
 import { useWindowDimensions } from "@hooks/useWindowDimensions";
 import Link from "next/link";
-import Headroom from "react-headroom";
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
