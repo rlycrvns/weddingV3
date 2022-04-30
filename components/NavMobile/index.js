@@ -4,10 +4,10 @@ import Link from "next/link";
 import styles from "./navMobile.module.scss";
 
 const navItems = [
-  { link: "", name: "Home" },
-  { link: "info", name: "Info" },
-  { link: "registry", name: "Registry" },
-  { link: "rsvp", name: "RSVP" }
+  { link: "/", name: "Home", target: "self" },
+  { link: "/info", name: "Info", target: "self" },
+  { link: "https://www.travelersjoy.com/jessicaandriley", name: "Registry", target: "_blank" },
+  { link: "/rsvp", name: "RSVP", target: "self" }
 ];
 
 export default function NavMobile({ toggle }) {
@@ -58,12 +58,13 @@ export default function NavMobile({ toggle }) {
       <motion.ul className={styles.items} variants={listVariant}>
         {navItems.map((item, i) => (
           <motion.li className={styles.navLink} variants={itemVariant} key={i}>
-            <Link href={`/${item.link}`}>
+            <Link href={item.link}>
               <a
                 onClick={() => toggle(false)}
                 onKeyPress={() => toggle(false)}
                 role="link"
                 tabIndex={0}
+                target={item.target}
               >
                 <span>{item.name}</span>
               </a>
