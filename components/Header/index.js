@@ -23,11 +23,6 @@ export default function Header() {
         Skip to Content
       </a>
       <div className={styles.container}>
-        <Headroom>
-          <div className={styles.navWrapper}>
-            <Nav navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />
-          </div>
-        </Headroom>
         <Link href="/">
           <a>
             <div className={styles.info}>
@@ -37,6 +32,9 @@ export default function Header() {
             </div>
           </a>
         </Link>
+        <div className={styles.navWrapper}>
+          <Nav navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />
+        </div>
       </div>
       <FocusOn enabled={navOpen}>
         <Toggle navOpen={navOpen} toggle={(isOpen) => setNavOpen(isOpen)} />

@@ -14,8 +14,10 @@ export default function Info() {
             <h2>When</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>August 28, 2022</li> <li>Arrival at 5:00pm</li>
-              <li>Outdoor ceremony at 5:30pm</li>
+              <li>August 28, 2022</li>
+              <li>
+                Arrival at 5:00pm <br /> Outdoor ceremony at 5:30pm
+              </li>
               <li>Outdoor reception to follow on-site</li>
             </ul>
           </div>
@@ -25,13 +27,19 @@ export default function Info() {
             <ul>
               <li>
                 <Link href="http://www.schollsvalleylodge.com/">
-                  <a target="_blank">Scholl's Valley Lodge</a>
-                </Link>
-                <br />
-                <Link href="https://www.google.com/maps/place/Scholls+Valley+Lodge/@45.4303321,-122.9313421,17z/data=!3m1!4b1!4m5!3m4!1s0x549513cf2aa8ab5b:0x457d5fd397d27ca3!8m2!3d45.4303321!4d-122.9291534">
                   <a target="_blank">
+                    Scholl's Valley Lodge
                     <br /> 2840 SW River Road
                     <br /> Hillsboro, OR 97123
+                  </a>
+                </Link>
+                <br />
+                <br />
+                <Link href="https://www.google.com/maps/place/Scholls+Valley+Lodge/@45.4303321,-122.9313421,17z/data=!3m1!4b1!4m5!3m4!1s0x549513cf2aa8ab5b:0x457d5fd397d27ca3!8m2!3d45.4303321!4d-122.9291534">
+                  <a className={styles.button} target="_blank">
+                    Directions
+                    <div className={styles.button__horizontal}></div>
+                    <div className={styles.button__vertical}></div>
                   </a>
                 </Link>
               </li>
@@ -78,7 +86,7 @@ export default function Info() {
                   <a target="_blank">this article</a>
                 </Link>
                 <br />
-                Basically no jeans, t-shirts or shorts
+                Essentially no jeans, t-shirts or shorts please and thank you
               </li>
               <li>Light coat recommended due to the possibility of wind</li>
               <li>Ceremony will be held on a lawn, we suggest avoiding pointed heels</li>
