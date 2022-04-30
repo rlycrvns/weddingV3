@@ -4,10 +4,10 @@ import Link from "next/link";
 import styles from "./navMobile.module.scss";
 
 const navItems = [
-  { link: "/", name: "Home", target: "_self" },
-  { link: "/info", name: "Info", target: "_self" },
-  { link: "https://www.travelersjoy.com/jessicaandriley", name: "Registry", target: "_blank" },
-  { link: "/rsvp", name: "RSVP", target: "_self" }
+  { link: "/", name: "Home" },
+  { link: "/info", name: "Info" },
+  { link: "/registry", name: "Registry" },
+  { link: "/rsvp", name: "RSVP" }
 ];
 
 export default function NavMobile({ toggle }) {
@@ -64,7 +64,6 @@ export default function NavMobile({ toggle }) {
                 onKeyPress={() => toggle(false)}
                 role="link"
                 tabIndex={0}
-                target={item.target}
               >
                 <span>{item.name}</span>
               </a>

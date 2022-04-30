@@ -4,10 +4,10 @@ import styles from "./nav.module.scss";
 import Triangle from "@components/Triangle";
 
 const navItems = [
-  { link: "/", name: "Home", target: "_self" },
-  { link: "/info", name: "Info", target: "_self" },
-  { link: "https://www.travelersjoy.com/jessicaandriley", name: "Registry", target: "_blank" },
-  { link: "/rsvp", name: "RSVP", target: "_self" }
+  { link: "/", name: "Home" },
+  { link: "/info", name: "Info" },
+  { link: "/registry", name: "Registry" },
+  { link: "/rsvp", name: "RSVP" }
 ];
 
 export default function Nav() {
@@ -17,7 +17,7 @@ export default function Nav() {
         {navItems.map((item, i) => (
           <li className={styles.navLink} key={i}>
             <Link href={item.link}>
-              <a role="link" tabIndex={0} target={item.target}>
+              <a role="link" tabIndex={0}>
                 <span className={styles.text}>{item.name}</span>
                 <span className={styles.triangle}>
                   <Triangle />
