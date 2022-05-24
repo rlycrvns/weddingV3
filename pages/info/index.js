@@ -29,7 +29,7 @@ export default function Info() {
                 <Link href="http://www.schollsvalleylodge.com/">
                   <a target="_blank">
                     Scholl's Valley Lodge
-                    <br /> 2840 SW River Road
+                    <br /> 12840 SW River Road
                     <br /> Hillsboro, OR 97123
                   </a>
                 </Link>
