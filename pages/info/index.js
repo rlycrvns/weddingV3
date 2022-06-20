@@ -1,5 +1,4 @@
 import { getLayout } from "@components/Layout/PageLayout";
-import Triangle from "@components/Triangle";
 import Link from "next/link";
 import styles from "../../styles/Page.module.scss";
 export default function Info() {
@@ -16,7 +15,7 @@ export default function Info() {
             <ul>
               <li>August 28, 2022</li>
               <li>
-                Arrival at 5:00pm <br /> Outdoor ceremony at 5:30pm
+                Arrival at 4:45pm <br /> Outdoor ceremony at 5:30pm
               </li>
               <li>Outdoor reception to follow on-site</li>
             </ul>
@@ -48,12 +47,12 @@ export default function Info() {
             </ul>
           </div>
           <div className={styles.group}>
-            <h2>Vaccination Policy</h2>
+            <h2>Covid-19 Policy</h2>
             <div className={styles.divider}></div>
             <ul>
               <li>
                 To protect the safety of all guests and vendors, proof of full (booster if eligible)
-                Covid-19 vaccination must be provided with formal RSVP
+                Covid-19 vaccination must be provided with RSVP
               </li>
             </ul>
           </div>
@@ -72,6 +71,7 @@ export default function Info() {
             <div className={styles.divider}></div>
             <ul>
               <li>Gravel parking Lot</li>
+              <li>Ceremony will be held on a lawn</li>
               <li>Ceremony and reception site are accessible without stairs</li>
             </ul>
           </div>
@@ -90,13 +90,14 @@ export default function Info() {
               </li>
               <li>Light coat recommended due to the possibility of wind</li>
               <li>Ceremony will be held on a lawn, we suggest avoiding pointed heels</li>
+              <li>If you desire to wear a mask please do not hesitate to do so</li>
             </ul>
           </div>
           <div className={styles.group}>
             <h2>Food & Drink</h2>
             <div className={styles.divider}></div>
             <ul>
-              <li>Appetizers followed by light meal</li>
+              <li>Appetizers followed by buffet style meal</li>
               <li>Beer and wine bar along with NA beverages</li>
             </ul>
           </div>

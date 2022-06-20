@@ -12,24 +12,24 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.ttf");
+  font-family: "NunitoSans";
+  src: url("/fonts/NunitoSans-Regular.ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto-Bold.ttf");
+  font-family: "NunitoSans";
+  src: url("/fonts/NunitoSans-Bold.ttf");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("/fonts/Roboto-Italic.ttf");
+  font-family: "NunitoSans";
+  src: url("/fonts/NunitoSans-Italic.ttf");
   font-style: italic;
   font-weight: 400;
   font-display: swap;
@@ -38,8 +38,7 @@
 :root {
   --black: #3f321b;
   --white: #fff;
-
-  --bg-pink: var(--white);
+  --bg-pink: #faf4f3;
   --rust: #cd6647;
   --green: #485c41;
   --mustard: #f8c060;
@@ -66,7 +65,7 @@
     --spacing-section: 8rem;
   }
 
-  --font-body: "roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  --font-body: "NunitoSans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-names: "serenity";
   --font-regular: 400;
@@ -79,9 +78,10 @@
   --font-size-larger: 1.375rem;
   --font-size-largest: 1.5rem;
   --font-size-h1: clamp(6rem, 8vw, 8rem);
-  --font-size-h2: clamp(2rem, 6vw, 3rem);
+  --font-size-h2: clamp(2rem, 6vw, 4rem);
   --font-size-h3: clamp(1.6rem, 4vw, 2rem);
   --font-size-h4: 2rem;
+  --font-size-subheading: clamp(4rem, 8vw, 6rem);
 }
 
 html,

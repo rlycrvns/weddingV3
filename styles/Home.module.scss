@@ -2,13 +2,7 @@
 @use "@styles/mixins";
 
 .container {
-  @include mixins.container(1.5);
-  @media (min-width: breakpoint.$md) {
-    @include mixins.container(3);
-  }
-  @media (min-width: breakpoint.$xl) {
-    @include mixins.container(3, --size-xl);
-  }
+  @include mixins.container;
 }
 
 .main {

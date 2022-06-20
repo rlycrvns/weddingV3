@@ -6,6 +6,7 @@ import Triangle from "@components/Triangle";
 const navItems = [
   { link: "/", name: "Home" },
   { link: "/info", name: "Info" },
+  { link: "/our-story", name: "Our Story" },
   { link: "/registry", name: "Registry" },
   { link: "/rsvp", name: "RSVP" }
 ];

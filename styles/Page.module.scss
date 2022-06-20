@@ -2,13 +2,7 @@
 @use "@styles/mixins";
 
 .container {
-  @include mixins.container(1.5);
-  @media (min-width: breakpoint.$md) {
-    @include mixins.container(3);
-  }
-  @media (min-width: breakpoint.$xl) {
-    @include mixins.container(3, --size-xl);
-  }
+  @include mixins.container;
 }
 
 .header {
@@ -18,6 +12,11 @@
     font-family: var(--font-names);
     color: var(--green);
     font-weight: 400;
+    a {
+      &:hover {
+        color: var(--black);
+      }
+    }
   }
 }
 
