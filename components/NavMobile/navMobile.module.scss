@@ -38,6 +38,7 @@
 .navLink {
   text-transform: uppercase;
   color: var(--rust);
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
   line-height: 2.2;
+  white-space: nowrap;
 }
