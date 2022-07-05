@@ -5,6 +5,7 @@ import styles from "./homePhotos.module.scss";
 
 const images = [
   { src: "Jessica_Riley-52_xe4s3v.jpg" },
+  { src: "Jessica_Riley-33_icpegv.jpg" },
   { src: "Jessica_Riley-20_abrjwd.jpg" },
   { src: "Jessica_Riley-70_imuvsb.jpg" },
   { src: "Jessica_Riley-55_japhwj.jpg" },
