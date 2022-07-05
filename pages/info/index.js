@@ -52,7 +52,8 @@ export default function Info() {
             <ul>
               <li>
                 To protect the safety of all guests and vendors, proof of full (booster if eligible)
-                Covid-19 vaccination must be provided with RSVP
+                Covid-19 vaccination or negative PCR test taken no more than 72 hours prior to the
+                event is required
               </li>
             </ul>
           </div>
