@@ -43,9 +43,10 @@
     gap: 1rem;
     margin-inline: auto;
     @media (min-width: breakpoint.$md) {
-      grid-template-columns: 325px 5rem 325px;
+      grid-template-columns: 400px 5rem 400px;
     }
     h2 {
+      white-space: nowrap;
       color: var(--green);
       font-family: var(--font-names);
       font-size: calc(var(--font-size-h2) * 1.5);
