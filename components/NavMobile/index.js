@@ -4,11 +4,11 @@ import Link from "next/link";
 import styles from "./navMobile.module.scss";
 
 const navItems = [
-  { link: "/", name: "Home" },
-  { link: "/info", name: "Info" },
-  { link: "/our-story", name: "Our Story" },
-  { link: "/registry", name: "Registry" },
-  { link: "/rsvp", name: "RSVP" }
+  { link: "/", name: "Home", target: "_self" },
+  { link: "/info", name: "Info", target: "_self" },
+  { link: "/our-story", name: "Our Story", target: "_self" },
+  { link: "/registry", name: "Registry", target: "_self" },
+  { link: "https://rileyandjessicawedding.rsvpify.com", name: "RSVP", target: "_blank" }
 ];
 
 export default function NavMobile({ toggle }) {
@@ -65,6 +65,7 @@ export default function NavMobile({ toggle }) {
                 onKeyPress={() => toggle(false)}
                 role="link"
                 tabIndex={0}
+                target={item.target}
               >
                 <span>{item.name}</span>
               </a>
