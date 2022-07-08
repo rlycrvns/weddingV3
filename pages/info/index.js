@@ -54,6 +54,10 @@ export default function Info() {
                 To protect the safety of all guests and vendors, proof of full (booster if eligible)
                 Covid-19 vaccination or negative PCR test taken no more than 72 hours prior to the
                 event is required
+                <br />
+                <br />
+                We encourage all guests to take a day of rapid test and ask that if you are
+                experiencing Covid symptoms of any kind please do not attend
               </li>
             </ul>
           </div>
