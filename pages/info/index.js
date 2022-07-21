@@ -15,7 +15,7 @@ export default function Info() {
             <ul>
               <li>August 28, 2022</li>
               <li>
-                Arrival no earlier than 4:45pm <br /> Outdoor ceremony at 5:30pm
+                Arrival no earlier than 3:45pm <br /> Outdoor ceremony at 4:30pm
               </li>
               <li>Outdoor reception to follow on-site</li>
             </ul>
